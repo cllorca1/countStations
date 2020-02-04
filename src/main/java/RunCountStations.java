@@ -120,16 +120,18 @@ public class RunCountStations {
 
                 }
 
-                logger.info(minLink);
-                logger.info(maxLink);
-
-                station.setLinkToDestination1(maxLink);
-                station.setLinkToDestination2(minLink);
 
 
 
             }
 
+            logger.info(maxLink);
+            logger.info(minLink);
+
+            station.setLinkToDestination1(maxLink);
+            station.setLinkToDestination2(minLink);
+
+            //todo check that the links belong to two different motorway directions (they are not connected with each other)
 
         }
 
