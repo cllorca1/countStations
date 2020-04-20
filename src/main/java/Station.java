@@ -13,13 +13,13 @@ public class Station {
     private Link linkToDestination2;
 
     enum RoadType{
-        AUTOBAHN, BUNDESTRASSE;
+        AUTOBAHN, BUNDESSTRASSE
     }
 
-    public Station(String id, Coord coordinates, String desitnation1, String destination2, RoadType roadType) {
+    public Station(String id, Coord coordinates, String destination1, String destination2, RoadType roadType) {
         this.id = id;
         this.coordinates = coordinates;
-        this.destination1 = desitnation1;
+        this.destination1 = destination1;
         this.destination2 = destination2;
         this.roadType = roadType;
     }
